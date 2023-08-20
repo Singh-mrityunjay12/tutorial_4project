@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talent Battel GYM</title>
+  </head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="CSS/style.css" />
+  <style>
+    body {
+        font-family: 'Bebas Neue', sans-serif;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      background: url("gym.jpg");
+      /* height: 4200px; */
+    }
+    .left {
+      /* border: 3px solid gold; */
+
+      display: inline-block;
+      position: absolute;
+      left: 30px;
+      top: 30px;
+    }
+    .left img{
+        width: 140px;
+    }
+    .left div{
+        line-height: 20px;
+        font-size: 25;
+        text-align: center;
+    }
+    .center {
+      /* border: 3px solid brown; */
+      display: block;
+      /* position: absolute; */
+      width: 50%;
+      margin: 10px auto;
+    }
+    .right {
+      /* border: 3px solid green; */
+      display: inline-block;
+      position: absolute;
+      right: 50px;
+      top: 70px;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding:30px 25px;
+
+
+    }
+    .navbar li a:hover , .navbar li a.active{
+        text-decoration: underline;
+        color: darkslategray;
+    }
+    .btn{
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 5px,15px;
+        border: solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+
+    }
+    .btn :hover{
+        background-color: white;
+    }
+    .Container{
+
+        border: 2px solid crimson;
+        margin: 150px 80px;
+        padding: 70px;
+        width: 30%;
+        border-radius: 20px;
+    }
+    .fgroup input{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 2px;
+        border: 2px solid black;
+        margin: 10px auto;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    .Container h2{
+        text-align: center;
+    }
+    .Container button{
+       display: block;
+       width: 75%;
+       margin: 20px auto;
+
+    }
+  </style>
+  <body>
+    <header class="header">
+      <div class="left">
+        <img src="gymLogo.png" alt="" />
+        <div>Talent Battel</div>
+      </div>
+      <div class="center">
+        <ul class="navbar">
+          <li>
+            <a href="#" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#" class="active">About us</a>
+          </li>
+          <li>
+            <a href="#" class="active">Fitness package</a>
+          </li>
+          <li><a href="#" class="active">Contact</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <button class="btn">Sign In</button>
+        <button class="btn">Call</button>
+      </div>
+    </header>
+    <div class="Container">
+      <h2>Join Now</h2>
+      <form action="abc.php">
+        <div class="fgroup">
+          <input type="text" name="" placeholder="Enter your name">
+        </div>
+        <div class="fgroup" >
+            <input type="text" name="" placeholder="Enter your gender">
+        </div>
+        <div class="fgroup">
+            <input type="text" name="" placeholder="Enter your Email Id">
+
+        </div>
+        <div class="fgroup">
+            <input type="text" name="" placeholder="Enter your Contact number">
+        </div>
+    <div class="fgroup">
+        <input type="textarea" column="5" row="5" name="" placeholder="Enter your Address">
+    </div>
+
+     <button class="btn">submit</button>
+      </form>
+    </div>
+    <div>
+    <footer class="footer">Copyright:This website belong to Talent Battle</footer>
+    </div>
+  </body>
+</html>
